@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "137199075166",
+    "firebase_url": "https://aquarium-4be6a.firebaseio.com",
+    "project_id": "aquarium-4be6a",
+    "storage_bucket": "aquarium-4be6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137199075166:android:ea82fd6b7e3dc6f7b6d9cf",
+        "android_client_info": {
+          "package_name": "com.adin.aquarium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137199075166-oq8ncrmdus9mf52m7vrd1ub36db1grc7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adin.aquarium",
+            "certificate_hash": "509a45d84caf0a3545521f64d9a1bcf315a20f3b"
+          }
+        },
+        {
+          "client_id": "137199075166-1hn0vh83276li7nr78cm3cmhgtdr151q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxV-aSaNoFm7RYI450He2EgDoHzoiYWlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137199075166-1hn0vh83276li7nr78cm3cmhgtdr151q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

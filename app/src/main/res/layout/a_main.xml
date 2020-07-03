@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="12dp">
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kondisi_air_di_aquascape"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:textSize="18dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrap_condition"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="5dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.5"
+            android:background="@drawable/bg_circle"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_temp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="25"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="48dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ph_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kadar  pH 9.9"
+                android:textColor="@color/colorWhite"
+                android:textSize="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_temp_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+        <TextView
+            android:id="@+id/tv_state_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Air Tidak Dikuras"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintTop_toBottomOf="@id/wrap_condition"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bot_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorBackgroundDraker"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/top_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrap_ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_layout_condition"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_lbl_ph"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kadar pH"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                app:layout_constraintRight_toLeftOf="@id/tv_ph_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_ph_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:text="6.8"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/tv_lbl_ph"
+                app:layout_constraintBottom_toBottomOf="@id/tv_lbl_ph"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrap_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:elevation="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_layout_condition"
+            app:layout_constraintTop_toBottomOf="@id/wrap_ph">
+
+            <TextView
+                android:id="@+id/tv_lbl_temp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Suhu Air (C)"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                app:layout_constraintRight_toLeftOf="@id/tv_temp_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_temp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:text="25"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/tv_lbl_temp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_lbl_temp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrap_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:elevation="2dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_layout_condition"
+            app:layout_constraintTop_toBottomOf="@id/wrap_temp">
+
+            <TextView
+                android:id="@+id/tv_lbl_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                app:layout_constraintRight_toLeftOf="@id/tv_state_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_state_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:text="TIDAK DIKURAS"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/tv_lbl_state"
+                app:layout_constraintBottom_toBottomOf="@id/tv_lbl_state"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

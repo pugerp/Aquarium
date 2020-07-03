@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aquascape Monitoring</string>
+    <string name="kondisi_air_di_aquascape">Kondisi Air di Aquascape</string>
+    <string name="ph">pH</string>
+</resources>
